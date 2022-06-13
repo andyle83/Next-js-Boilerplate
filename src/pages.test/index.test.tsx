@@ -7,12 +7,12 @@ import Index from '@/pages/index';
 
 describe('Index page', () => {
   describe('Render method', () => {
-    it('should Main Content', () => {
+    it('should render carousel', () => {
       render(<Index />);
 
-      const paragraph = screen.getByText(/Main Content/);
+      const section = screen.getByRole('section');
 
-      expect(paragraph).toBeInTheDocument();
+      expect(section).toBeInTheDocument();
     });
   });
 });

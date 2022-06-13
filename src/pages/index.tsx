@@ -12,7 +12,7 @@ const Index = () => {
       }
     >
       {/* Carousel items */}
-      <section className="relative">
+      <section id="carousel" className="relative">
         <div className="carousel h-80">
           <div id="item1" className="carousel-item w-full">
             <img

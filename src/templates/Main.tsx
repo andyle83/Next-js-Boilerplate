@@ -182,7 +182,7 @@ const Main = (props: IMainProps) => (
           </div>
         </nav>
         {/* Page Content */}
-        <div className="content py-5 text-xl">{props.children}</div>
+        {props.children}
 
         {/* Footer */}
         <footer className="footer footer-center mt-5 gap-4 p-2 text-base-content">

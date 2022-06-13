@@ -4,14 +4,18 @@ import { Main } from './Main';
 
 describe('Main template', () => {
   describe('Render method', () => {
-    it('should have menu item', () => {
+    it('should have navigation', async () => {
       render(<Main meta={null}>{null}</Main>);
+      // eslint-disable-next-line testing-library/no-await-sync-query
+      const navigation = await screen.getByRole('navigation');
+      expect(navigation).toBeInTheDocument();
+    });
 
-      const trendingMenu = screen.getByText(/Trending/);
-      const productMenu = screen.getByText(/Products/);
-
-      expect(trendingMenu).toBeInTheDocument();
-      expect(productMenu).toBeInTheDocument();
+    it('should have footer', async () => {
+      render(<Main meta={null}>{null}</Main>);
+      // eslint-disable-next-line testing-library/no-await-sync-query
+      const footer = await screen.getByRole('contentinfo');
+      expect(footer).toBeInTheDocument();
     });
   });
 });
