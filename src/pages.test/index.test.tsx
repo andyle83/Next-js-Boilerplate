@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 
 import Index from '@/pages/index';
 
@@ -8,11 +8,10 @@ import Index from '@/pages/index';
 describe('Index page', () => {
   describe('Render method', () => {
     it('should render carousel', () => {
-      render(<Index />);
-
-      const section = screen.getByRole('section');
-
-      expect(section).toBeInTheDocument();
+      const { container } = render(<Index />);
+      // eslint-disable-next-line testing-library/no-container,testing-library/no-node-access
+      const section = container.getElementsByClassName('carousel');
+      expect(section).toHaveLength(1);
     });
   });
 });
