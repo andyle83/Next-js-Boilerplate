@@ -7,14 +7,12 @@ import Index from '@/pages/index';
 
 describe('Index page', () => {
   describe('Render method', () => {
-    it('should have h1 tag', () => {
+    it('should Main Content', () => {
       render(<Index />);
 
-      const heading = screen.getByRole('heading', {
-        name: /Boilerplate code/,
-      });
+      const paragraph = screen.getByText(/Main Content/);
 
-      expect(heading).toBeInTheDocument();
+      expect(paragraph).toBeInTheDocument();
     });
   });
 });

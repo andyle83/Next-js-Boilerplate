@@ -11,7 +11,7 @@ const Index = () => {
         />
       }
     >
-      <div>Main content in Homepage</div>
+      <div>Main Content</div>
     </Main>
   );
 };
