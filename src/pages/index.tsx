@@ -2,7 +2,6 @@ import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
 const Index = () => {
-  // const router = useRouter();
   return (
     <Main
       meta={
@@ -12,12 +11,7 @@ const Index = () => {
         />
       }
     >
-      {/* <a href="https://github.com/ixartz/Next-js-Boilerplate"> */}
-      {/*  <img */}
-      {/*    src={`${router.basePath}/assets/images/nextjs-starter-banner.png`} */}
-      {/*    alt="Nextjs starter banner" */}
-      {/*  /> */}
-      {/* </a> */}
+      <div>Main content in Homepage</div>
     </Main>
   );
 };
