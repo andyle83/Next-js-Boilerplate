@@ -37,25 +37,24 @@ const Main = (props: IMainProps) => (
                   </svg>
                 </label>
               </div>
-              <a
-                href="/tailwindcss-101"
-                className="btn btn-primary btn-circle lg:mx-4"
-              >
-                <svg
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-                  ></path>
-                </svg>
-              </a>
+              <Link href="/">
+                <a className="btn btn-primary btn-circle lg:mx-4">
+                  <svg
+                    className="h-6 w-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+                    ></path>
+                  </svg>
+                </a>
+              </Link>
               <div className="hidden md:block">
                 <ul className="menu menu-horizontal">
                   <li>

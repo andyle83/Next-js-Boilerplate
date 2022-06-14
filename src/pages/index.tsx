@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
@@ -55,11 +57,13 @@ const Index = () => {
           <div id="featureProduct" className="px-4">
             <div className="card my-3 w-full shadow-2xl">
               <div className="relative">
-                <img
-                  src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-                  className="h-80 w-full object-cover"
-                  alt="Fashion"
-                />
+                <Link href="/purchase">
+                  <img
+                    src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+                    className="h-80 w-full object-cover"
+                    alt="Fashion"
+                  />
+                </Link>
                 <svg
                   className="absolute top-0 right-0 m-3 h-8 w-8 fill-transparent stroke-white"
                   viewBox="0 0 24 24"
